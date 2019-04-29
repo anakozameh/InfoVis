@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>DataViz - Ana Kozameh</title>
+<style id="jsbin-css">
+#circlegreen {
+      width: 30px;
+      height: 30px;
+      -webkit-border-radius: 300px;
+      -moz-border-radius: 60000px;
+      border-radius: 2900px;
+  background-color: rgba(13, 104, 34, 0.7);
+    }
+#circleceleste {
+      width: 30px;
+      height: 30px;
+      -webkit-border-radius: 300px;
+      -moz-border-radius: 60000px;
+      border-radius: 2900px;
+   background-color: rgba(90, 187, 226, 0.7);
+}
+#circleplateado {
+      width: 30px;
+      height: 30px;
+      -webkit-border-radius: 300px;
+      -moz-border-radius: 60000px;
+      border-radius: 2900px;
+  background-color: rgba(206, 224, 232, 7);
+    }
+#circlegris {
+      width: 30px;
+      height:30px;
+      -webkit-border-radius: 300px;
+      -moz-border-radius: 60000px;
+      border-radius: 2900px;
+      background:#727b7f;
+  background-color: rgba(114, 123, 127, 0.7);
+    }
+#circleb {
+      width: 30px;
+      height: 30px;
+      -webkit-border-radius: 300px;
+      -moz-border-radius: 60000px;
+      border-radius: 2900px;
+      background-color: rgba(0, 3, 7, 0.8);
+    }
+#circleblanco {
+    background-color:#fff;
+    border:1px solid black;    
+    height:30px;
+    border-radius:20%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:30px;
+}
+#circleblue {
+      width: 30px;
+      height: 30px;
+      -webkit-border-radius: 300px;
+      -moz-border-radius: 60000px;
+      border-radius: 2900px;
+  background-color: rgba(42, 95, 211, 0.7);
+    }
+#circlered {
+      width: 30px;
+      height:30px;
+      -webkit-border-radius: 300px;
+      -moz-border-radius: 60000px;
+      border-radius: 2900px;
+  background-color: rgba(221, 48, 48, 0.7);
+    }
+#circlenaranja {
+      width: 30px;
+      height: 30px;
+      -webkit-border-radius: 300px;
+      -moz-border-radius: 60000px;
+      border-radius: 2900px;
+  background-color: rgba(255, 161, 38, 0.7);
+    }
+#circleverde {
+      width: 30px;
+      height: 30px;
+      -webkit-border-radius: 300px;
+      -moz-border-radius: 60000px;
+      border-radius: 2900px;
+  background-color: rgba(88, 174, 44, 0.7);
+    }
+#circleazul {
+      width: 30px;
+      height: 30px;
+      -webkit-border-radius: 300px;
+      -moz-border-radius: 60000px;
+      border-radius: 2900px;
+  background-color: rgba(34, 82, 165, 0.7);
+    }
+#circlebordo {
+      width: 30px;
+      height: 30px;
+      -webkit-border-radius: 300px;
+      -moz-border-radius: 60000px;
+      border-radius: 2900px;
+background-color: rgba(155, 13, 42, 0.7);
+}
+#circlemarron {
+      width: 30px;
+      height: 30px;
+      -webkit-border-radius: 300px;
+      -moz-border-radius: 60000px;
+      border-radius: 2900px;
+background-color: rgba(99, 61, 36, 0.7);    
+}
+</style>
+</head>
+<body>
+  <div align="center">  
+    <h1><p style = "font-family:Bahnschrift Light;font-size:35px;">Datos Personales</p> </h1>
+  </div>
+  <div align="center">  
+   <svg width="1100" height="600" xmlns="http://www.w3.org/2000/svg"><g transform="translate(.5,.5)"><g class="cell" transform="translate(14,14)"><rect width="138.78787878787878" height="216.2" style="fill: rgb(209, 130, 130); stroke: rgb(255, 255, 255);"></rect><title>undefined: NaN</title><text x="69.39393939393939" y="108.1" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial, Helvetica;">Zapatillas, 4</text></g><g class="cell" transform="translate(159.78787878787878,14)"><rect width="248.12878787878796" height="216.2" style="fill: rgb(213, 137, 149); stroke: rgb(255, 255, 255);"></rect><title>undefined: NaN</title><text x="124.06439393939398" y="108.1" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial, Helvetica;">Zapatos, 7</text></g><g class="cell" transform="translate(414.91666666666674,14)"><rect width="29.44696969696963" height="216.2" style="fill: rgb(191, 105, 143); stroke: rgb(255, 255, 255);"></rect><title>undefined: NaN</title><text x="14.723484848484816" y="108.1" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial, Helvetica;">Botas, 1</text></g><g class="cell" transform="translate(14,251.2)"><rect width="357.469696969697" height="198.07999999999998" style="fill: rgb(164, 184, 115); stroke: rgb(255, 255, 255);"></rect><title>undefined: NaN</title><text x="178.7348484848485" y="99.03999999999999" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial, Helvetica;">Jean, 9</text></g><g class="cell" transform="translate(14,456.28)"><rect width="357.469696969697" height="129.72000000000003" style="fill: rgb(138, 170, 125); stroke: rgb(255, 255, 255);"></rect><title>undefined: NaN</title><text x="178.7348484848485" y="64.86000000000001" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial, Helvetica;">Pantalon, 6</text></g><g class="cell" transform="translate(378.469696969697,251.2)"><rect width="65.89393939393938" height="220.86666666666667" style="fill: rgb(142, 196, 132); stroke: rgb(255, 255, 255);"></rect><title>undefined: NaN</title><text x="32.94696969696969" y="110.43333333333334" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial, Helvetica;">Pollera, 2</text></g><g class="cell" transform="translate(378.469696969697,479.06666666666666)"><rect width="65.89393939393938" height="106.93333333333334" style="fill: rgb(137, 209, 178); stroke: rgb(255, 255, 255);"></rect><title>undefined: NaN</title><text x="32.94696969696969" y="53.46666666666667" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial, Helvetica;">Short, 1</text></g><g class="cell" transform="translate(465.3636363636364,14)"><rect width="106.06493506493507" height="218.16666666666666" style="fill: rgb(105, 191, 191); stroke: rgb(255, 255, 255);"></rect><title>undefined: NaN</title><text x="53.032467532467535" y="109.08333333333333" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial, Helvetica;">Buzo, 3</text></g><g class="cell" transform="translate(578.4285714285714,14)"><rect width="106.06493506493507" height="218.16666666666666" style="fill: rgb(105, 154, 191); stroke: rgb(255, 255, 255);"></rect><title>undefined: NaN</title><text x="53.032467532467535" y="109.08333333333333" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial, Helvetica;">Tapado, 3</text></g><g class="cell" transform="translate(691.4935064935065,14)"><rect width="106.06493506493507" height="218.16666666666666" style="fill: rgb(148, 175, 210); stroke: rgb(255, 255, 255);"></rect><title>undefined: NaN</title><text x="53.032467532467535" y="109.08333333333333" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial, Helvetica;">Blazer, 3</text></g><g class="cell" transform="translate(804.5584415584416,14)"><rect width="181.4415584415584" height="218.16666666666666" style="fill: rgb(124, 160, 176); stroke: rgb(255, 255, 255);"></rect><title>undefined: NaN</title><text x="90.7207792207792" y="109.08333333333333" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial, Helvetica;">Camisa, 5</text></g><g class="cell" transform="translate(465.3636363636364,239.16666666666666)"><rect width="424.702479338843" height="169.9166666666667" style="fill: rgb(105, 148, 191); stroke: rgb(255, 255, 255);"></rect><title>undefined: NaN</title><text x="212.3512396694215" y="84.95833333333336" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial, Helvetica;">Remera, 9</text></g><g class="cell" transform="translate(465.3636363636364,416.08333333333337)"><rect width="424.702479338843" height="169.91666666666663" style="fill: rgb(96, 162, 174); stroke: rgb(255, 255, 255);"></rect><title>undefined: NaN</title><text x="212.3512396694215" y="84.95833333333331" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial, Helvetica;">Sweater, 9</text></g><g class="cell" transform="translate(897.0661157024794,239.16666666666666)"><rect width="88.93388429752065" height="346.83333333333337" style="fill: rgb(75, 136, 164); stroke: rgb(255, 255, 255);"></rect><title>undefined: NaN</title><text x="44.466942148760324" y="173.41666666666669" dy=".35em" text-anchor="middle" style="font-size: 11px; font-family: Arial, Helvetica;">Campera, 4</text></g></g></svg></div>
+
+<h1><p style = "font-family:Bahnschrift Light;font-size:30px;">Colores</p></h1>  
+  
+
+  
+<div align="center">  
+  <svg width="1000" height="492" xmlns="http://www.w3.org/2000/svg"><g transform="translate(0, 10)"><g class="links" fill="none" stroke-opacity="0.4"><path d="M5,14.518518518518434C500,14.518518518518434,500,96.70370370370365,995,96.70370370370365" stroke-width="29.037037037037038" style="stroke: rgb(14, 83, 229);"></path><path d="M5,77.1481481481481C500,77.1481481481481,500,280.96296296296293,995,280.96296296296293" stroke-width="76.22222222222223" style="stroke: rgb(219, 219, 219);"></path><path d="M5,141.59259259259255C500,141.59259259259255,500,137.55555555555554,995,137.55555555555554" stroke-width="32.66666666666667" style="stroke: rgb(117, 207, 224);"></path><path d="M5,186.074074074074C500,186.074074074074,500,214.70370370370372,995,214.70370370370372" stroke-width="36.2962962962963" style="stroke: rgb(137, 137, 137);"></path><path d="M5,219.6666666666666C500,219.6666666666666,500,10.444444444444388,995,10.444444444444388" stroke-width="10.88888888888889" style="stroke: rgb(136, 104, 71);"></path><path d="M5,242.3703703703703C500,242.3703703703703,500,33.14814814814809,995,33.14814814814809" stroke-width="14.518518518518519" style="stroke: rgb(255, 169, 67);"></path><path d="M5,328.5925925925925C500,328.5925925925925,500,398.03703703703707,995,398.03703703703707" stroke-width="137.92592592592592" style="stroke: rgb(0, 0, 0);"></path><path d="M5,418.44444444444446C500,418.44444444444446,500,61.29629629629625,995,61.29629629629625" stroke-width="21.77777777777778" style="stroke: rgb(234, 76, 76);"></path><path d="M5,455.66666666666663C500,455.66666666666663,500,170.2222222222222,995,170.2222222222222" stroke-width="32.66666666666667" style="stroke: rgb(110, 191, 105);"></path></g><g class="nodes" font-family="Arial, Helvetica" font-size="10"><g><rect x="995" y="196.55555555555557" height="36.29629629629629" width="5" fill="#000"></rect><text x="989" y="214.70370370370372" dy="0.35em" text-anchor="end">10</text></g><g><rect x="995" y="242.85185185185185" height="76.22222222222221" width="5" fill="#000"></rect><text x="989" y="280.96296296296293" dy="0.35em" text-anchor="end">21</text></g><g><rect x="995" y="4.999999999999943" height="10.888888888888886" width="5" fill="#000"></rect><text x="989" y="10.444444444444386" dy="0.35em" text-anchor="end">3</text></g><g><rect x="995" y="329.0740740740741" height="137.92592592592598" width="5" fill="#000"></rect><text x="989" y="398.03703703703707" dy="0.35em" text-anchor="end">38</text></g><g><rect x="995" y="82.18518518518513" height="29.037037037037067" width="5" fill="#000"></rect><text x="989" y="96.70370370370367" dy="0.35em" text-anchor="end">8</text></g><g><rect x="995" y="25.88888888888883" height="14.518518518518533" width="5" fill="#000"></rect><text x="989" y="33.148148148148096" dy="0.35em" text-anchor="end">4</text></g><g><rect x="995" y="50.40740740740736" height="21.77777777777777" width="5" fill="#000"></rect><text x="989" y="61.29629629629625" dy="0.35em" text-anchor="end">6</text></g><g><rect x="995" y="121.2222222222222" height="65.33333333333337" width="5" fill="#000"></rect><text x="989" y="153.88888888888889" dy="0.35em" text-anchor="end">9</text></g><g><rect x="0" y="-8.526512829121202e-14" height="29.037037037037067" width="5" fill="#000"></rect><text x="11" y="14.518518518518448" dy="0.35em" text-anchor="start">Azul</text></g><g><rect x="0" y="39.03703703703698" height="76.22222222222223" width="5" fill="#000"></rect><text x="11" y="77.1481481481481" dy="0.35em" text-anchor="start">Blanco</text></g><g><rect x="0" y="125.25925925925921" height="32.66666666666663" width="5" fill="#000"></rect><text x="11" y="141.59259259259252" dy="0.35em" text-anchor="start">Celeste</text></g><g><rect x="0" y="167.92592592592584" height="36.296296296296305" width="5" fill="#000"></rect><text x="11" y="186.074074074074" dy="0.35em" text-anchor="start">Gris</text></g><g><rect x="0" y="214.22222222222214" height="10.888888888888886" width="5" fill="#000"></rect><text x="11" y="219.66666666666657" dy="0.35em" text-anchor="start">Marrón</text></g><g><rect x="0" y="235.11111111111103" height="14.518518518518533" width="5" fill="#000"></rect><text x="11" y="242.3703703703703" dy="0.35em" text-anchor="start">Naranja</text></g><g><rect x="0" y="259.62962962962956" height="137.92592592592595" width="5" fill="#000"></rect><text x="11" y="328.59259259259255" dy="0.35em" text-anchor="start">Negro</text></g><g><rect x="0" y="407.55555555555554" height="21.77777777777777" width="5" fill="#000"></rect><text x="11" y="418.44444444444446" dy="0.35em" text-anchor="start">Rojo</text></g><g><rect x="0" y="439.3333333333333" height="32.66666666666674" width="5" fill="#000"></rect><text x="11" y="455.6666666666667" dy="0.35em" text-anchor="start">Verde</text></g></g></g></svg>  
+  </div>
+  
+<h1><p style = "font-family:Bahnschrift Light;font-size:30px;">Colores por día </p></h1>
+ 
+  <p style = "font-family:Bahnschrift Light;font-size:16px;"> Esta visualización muestra los colores usados en cada día.</p>
+  
+  
+  <table align="center">
+  <tr> 
+    <th> 
+    </th>
+    <th> 
+    </th>
+    <th> 
+    <p style = "font-family:Bahnschrift Light;font-size:23px;">Abril</p>
+      </th>
+    </tr>
+  <tr>
+    <th><p style = "font-family:Bahnschrift Light;font-size:20px;">Mon 1st</p></th>
+    <th> </th>
+    <th> </th>
+    <th><div id="circleb"></div></th>
+    <th><div id="circleb"></div></th> 
+    <th><div id="circlegreen"></div>   </th>
+    <th><div id="circleceleste"></div></th>
+  </tr>
+  <tr>
+    <th><p style = "font-family:Bahnschrift Light;font-size:20px;">Tue 2nd</p></th>
+    <th></th>
+    <th> </th>
+    <th><div id="circleb"><g class="links" fill="none" stroke-opacity="0.4"></div></th>
+    <th><div id="circleb"></div></th>
+    <th><div id="circleplateado"></div></th>
+    <th><div id="circleceleste"></div></th>
+  </tr>
+   <tr>
+    <th><p style = "font-family:Bahnschrift Light;font-size:20px;">Wed 3rd</p></th>
+    <th></th>
+    <th></th>
+    <th><div id="circleb"></div></th>
+    <th><div id="circlegris"></div></th>
+    <th><div id="circleblue"></div></th>
+    <th><div id="circleblanco"></div></th>
+  </tr>
+  <tr>
+    <th><p style = "font-family:Bahnschrift Light;font-size:20px;">Thu 4th</p></th>
+    <th></th>
+    <th></th>
+    <th><div id="circleb"></div></th>
+    <th><div id="circleb"></div></th>
+    <th><div id="circlenaranja"></div></th>
+    <th><div id="circleblanco"></div></th>
+    <th><div id="circleblanco"></div></th>
+  </tr>  
+  <tr>
+    <th><p style = "font-family:Bahnschrift Light;font-size:20px;">Fri 5th</p></th>
+    <th></th>
+    <th></th>
+    <th><div id="circleb"></div></th>
+    <th><div id="circleb"></div></th>
+    <th><div id="circleb"></div></th>
+    <th><div id="circleb"></div></th>
+    <th><div id="circleb"></div></th>
+    <th><div id="circleb"></div></th>
+    <th><div id="circleceleste"></div></th>
+    <th><div id="circleceleste"></div></th>    
+  </tr>
+    <tr>
+    <th><p style = "font-family:Bahnschrift Light;font-size:20px;">Sat 6th</p></th>
+    <th></th>
+    <th></th>
+    <th><div id="circleb"></div></th>
+    <th><div id="circleb"></div></th>
+    <th><div id="circleb"></div></th>
+    <th><div id="circlegreen"></div></th>
+    <th><div id="circleblue"></div></th>
+    <th><div id="circleblanco"></div></th>
+    <th><div id="circleblanco"></div></th>
+    <th><div id="circleblanco"></div></th>
+    <th><div id="circleblanco"></div></th>      
+  </tr>
+  <tr>
+    <th><p style = "font-family:Bahnschrift Light;font-size:20px;">Sun 7th</p></th>
+    <th></th>
+    <th></th>
+    <th><div id="circleb"></div></th>
+    <th><div id="circlegris"></div></th>
+    <th><div id="circlegreen"></div></th>
+    <th><div id="circleverde"></div></th>
+    <th><div id="circlered"></div></th>
+    <th><div id="circleblanco"></div></th>
+
+  </tr>  
+    <tr>
+    <th><p style = "font-family:Bahnschrift Light;font-size:20px;">Mon 8th</p></th>
+    <th></th>
+    <th></th>
+    <th><div id="circleb"></div></th>
+    <th><div id="circleb"></div></th>
+    <th><div id="circleb"></div></th>
+    <th><div id="circleblue"></div></th>
+  </tr>  
+  <tr>
+    <th><p style = "font-family:Bahnschrift Light;font-size:20px;">Tue 9th</p></th>
+    <th></th>
+    <th></th>    
+    <th><div id="circleb"></div></th>
+    <th><div id="circlegris"></div></th>
+    <th><div id="circlegreen"></div></th>
+  </tr>
+    <tr>
+    <th><p style = "font-family:Bahnschrift Light;font-size:20px;">Wen 10th</p></th>
+      <th></th>
+    <th></th>
+    <th><div id="circleb"></div></th>
+    <th><div id="circleb"></div></th>
+    <th><div id="circleb"></div></th>
+    <th><div id="circlegris"></div></th>
+    <th><div id="circleazul"></div></th>
+    <th><div id="circleceleste"></div></th>
+    <th><div id="circlebordo"></div></th>
+    <th><div id="circlered"></div></th>
+      
+  </tr>  
+  <tr>
+    <th><p style = "font-family:Bahnschrift Light;font-size:20px;">Thu 11th</p></th>
+    <th></th>
+    <th></th>
+    <th><div id="circleb"></div></th>
+    <th><div id="circleb"></div></th>
+    <th><div id="circlemarron"></div></th>
+    <th><div id="circleceleste"></div></th>
+    <th><div id="circlenaranja"></div></th>
+    <th><div id="circleblanco"></div></th>
+
+  </tr>  
+  <tr>
+    <th><p style = "font-family:Bahnschrift Light;font-size:20px;">Fri 12th</p></th>
+    <th></th>
+    <th></th>
+    <th><div id="circleb"></div></th>
+    <th><div id="circleverde"></div></th>
+    <th><div id="circlered"></div></th> 
+    <th><div id="circlenaranja"></div></th>    
+    <th><div id="circleblanco"></div></th>
+    <th><div id="circleblanco"></div></th>
+  </tr> 
+    <tr>
+    <th><p style = "font-family:Bahnschrift Light;font-size:20px;">Sat 13th</p></th>
+    <th></th>
+    <th></th>
+    <th><div id="circleb"></div></th>
+    <th><div id="circleb"></div></th>
+    <th><div id="circleb"></div></th>
+    <th><div id="circlegreen"></div></th>  
+    <th><div id="circleblue"></div></th>
+    <th><div id="circleblanco"></div></th>
+    <th><div id="circleblanco"></div></th>
+    <th><div id="circleblanco"></div></th>
+    <th><div id="circleblanco"></div></th>
+  </tr>  
+  <tr>
+    <th><p style = "font-family:Bahnschrift Light;font-size:20px;">Sun 14th</p></th>
+    <th></th>
+    <th></th>
+    <th><div id="circleb"></div></th>
+    <th><div id="circleazul"></div></th>
+    <th><div id="circleceleste"></div></th>
+    <th><div id="circlered"></div></th>
+    <th><div id="circleblanco"></div></th>
+  </tr>  
+   <tr>
+    <th><p style = "font-family:Bahnschrift Light;font-size:20px;">Mon 15th</p></th>
+    <th></th>
+    <th></th>
+    <th><div id="circleb"></div></th>
+    <th><div id="circlegris"></div></th>
+    <th><div id="circleazul"></div></th>
+    <th><div id="circleblanco"></div></th>
+  </tr> 
+   <tr>
+    <th><p style = "font-family:Bahnschrift Light;font-size:20px;">Tue 16th</p></th>
+    <th></th>
+    <th></th>
+    <th><div id="circleb"></div></th>
+    <th><div id="circleb"></div></th>
+    <th><div id="circlegris"></div></th>
+    <th><div id="circleceleste"></div></th>
+    <th><div id="circleblanco"></div></th>
+  </tr>
+   <tr>
+    <th><p style = "font-family:Bahnschrift Light;font-size:20px;">Wed 17th</p></th>
+    <th></th>
+    <th></th>
+    <th><div id="circleb"></div></th>
+    <th><div id="circlegris"></div></th>
+    <th><div id="circlegris"></div></th>
+    <th><div id="circleverde"></div></th>
+    <th><div id="circleblue"></div></th>
+    <th><div id="circlenaranja"></div></th>
+    <th><div id="circleblanco"></div></th>
+  </tr>
+   <tr>
+    <th><p style = "font-family:Bahnschrift Light;font-size:20px;">Thu 18th</p></th>
+    <th></th>
+    <th></th>
+    <th><div id="circleb"></div></th>
+    <th><div id="circlegris"></div></th>
+    <th><div id="circlemarron"></div></th>
+    <th><div id="circlered"></div></th>
+    <th><div id="circleceleste"></div></th>
+  </tr>  
+   <tr>
+ <th><p style = "font-family:Bahnschrift Light;font-size:20px;">Fri 19th</p></th>
+    <th></th>
+    <th></th>
+    <th><div id="circleb"></div></th>
+    <th><div id="circleb"></div></th>
+    <th><div id="circleb"></div></th>
+    <th><div id="circlemarron"></div></th>
+    <th><div id="circlegreen"></div></th>
+    <th><div id="circleblanco"></div></th>
+    <th><div id="circleblanco"></div></th>      
+  </tr> 
+  </table>
+  
+  <h1><p style = "font-family:Bahnschrift Light;font-size:30px;">Estampados</p></h1>  
+  <div align="center"> 
+<a href="http://es.tinypic.com?ref=2cen28w" target="_blank"><img src="http://i65.tinypic.com/2cen28w.jpg" border="0" alt="Image and video hosting by TinyPic"></a>  </div>
+  
+
+<script id="jsbin-source-css" type="text/css">#circlegreen {
+      width: 30px;
+      height: 30px;
+      -webkit-border-radius: 300px;
+      -moz-border-radius: 60000px;
+      border-radius: 2900px;
+  background-color: rgba(13, 104, 34, 0.7);
+    }
+#circleceleste {
+      width: 30px;
+      height: 30px;
+      -webkit-border-radius: 300px;
+      -moz-border-radius: 60000px;
+      border-radius: 2900px;
+   background-color: rgba(90, 187, 226, 0.7);
+}
+#circleplateado {
+      width: 30px;
+      height: 30px;
+      -webkit-border-radius: 300px;
+      -moz-border-radius: 60000px;
+      border-radius: 2900px;
+  background-color: rgba(206, 224, 232, 7);
+    }
+#circlegris {
+      width: 30px;
+      height:30px;
+      -webkit-border-radius: 300px;
+      -moz-border-radius: 60000px;
+      border-radius: 2900px;
+      background:#727b7f;
+  background-color: rgba(114, 123, 127, 0.7);
+    }
+#circleb {
+      width: 30px;
+      height: 30px;
+      -webkit-border-radius: 300px;
+      -moz-border-radius: 60000px;
+      border-radius: 2900px;
+      background-color: rgba(0, 3, 7, 0.8);
+    }
+#circleblanco {
+    background-color:#fff;
+    border:1px solid black;    
+    height:30px;
+    border-radius:20%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:30px;
+}
+#circleblue {
+      width: 30px;
+      height: 30px;
+      -webkit-border-radius: 300px;
+      -moz-border-radius: 60000px;
+      border-radius: 2900px;
+  background-color: rgba(42, 95, 211, 0.7);
+    }
+#circlered {
+      width: 30px;
+      height:30px;
+      -webkit-border-radius: 300px;
+      -moz-border-radius: 60000px;
+      border-radius: 2900px;
+  background-color: rgba(221, 48, 48, 0.7);
+    }
+#circlenaranja {
+      width: 30px;
+      height: 30px;
+      -webkit-border-radius: 300px;
+      -moz-border-radius: 60000px;
+      border-radius: 2900px;
+  background-color: rgba(255, 161, 38, 0.7);
+    }
+#circleverde {
+      width: 30px;
+      height: 30px;
+      -webkit-border-radius: 300px;
+      -moz-border-radius: 60000px;
+      border-radius: 2900px;
+  background-color: rgba(88, 174, 44, 0.7);
+    }
+#circleazul {
+      width: 30px;
+      height: 30px;
+      -webkit-border-radius: 300px;
+      -moz-border-radius: 60000px;
+      border-radius: 2900px;
+  background-color: rgba(34, 82, 165, 0.7);
+    }
+#circlebordo {
+      width: 30px;
+      height: 30px;
+      -webkit-border-radius: 300px;
+      -moz-border-radius: 60000px;
+      border-radius: 2900px;
+background-color: rgba(155, 13, 42, 0.7);
+}
+#circlemarron {
+      width: 30px;
+      height: 30px;
+      -webkit-border-radius: 300px;
+      -moz-border-radius: 60000px;
+      border-radius: 2900px;
+background-color: rgba(99, 61, 36, 0.7);    
+}
+</script>
+</body>
+</html>
