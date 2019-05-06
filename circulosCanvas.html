@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  <canvas id="canvas" width="600" height="600"></canvas>
+  <script>
+    //var c = document.getElementById("canvas");
+    //var ctxCircle = c.getContext("2d");
+   // ctxCircle.beginPath();
+ // ctxCircle.fillStyle="GreenYellow";
+   // ctxCircle.fill();
+   // ctxCircle.strokeStyle="ForestGreen";
+    //ctxCircle.stroke();   
+    function rc() {
+  return (Math.random() * 256);
+}
+
+var c = 
+document.getElementById("canvas");
+var ctx = c.getContext("2d");
+
+for (i = 0 ; i < 1000; i++) {
+  ctx.beginPath();
+  ctx.arc(c.width * Math.random(),
+          c.height * Math.random(),
+          10, 
+          0,
+          2 * Math.PI);
+  ctx.fillStyle = 'rgba(0 , ' + Math.floor (255 - 255*Math.random()) + ' , ' + 
+    Math.floor(255 - 255 * Math.random()) + ')';
+  ctx.fill();
+  //ctx.stroke();
+}
+    
+  </script>
+</body>
+</html>
