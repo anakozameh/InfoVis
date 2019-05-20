@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+<svg 
+     width="800" height="400">
+</svg>
+ 
+
+<script id="jsbin-javascript">
+var data = [50,100];
+var escala = d3.scaleSqrt()
+	.domain([0, d3.max(data)])
+	.range([0, 50]);
+d3.select("body").append("svg")
+.attr("width" ,800)
+.attr("height",400);
+d3.select("svg").selectAll("circle").data(data).enter().append("circle")
+.attr("cx", function(d,i) {return (i+1)*400/3;})
+.attr("cy",200)
+.attr("r", d => escala(d))
+.attr("fill", "steelblue");
+</script>
+
+
+
+<script id="jsbin-source-javascript" type="text/javascript">var data = [50,100];
+var escala = d3.scaleSqrt()
+	.domain([0, d3.max(data)])
+	.range([0, 50]);
+d3.select("body").append("svg")
+.attr("width" ,800)
+.attr("height",400);
+d3.select("svg").selectAll("circle").data(data).enter().append("circle")
+.attr("cx", function(d,i) {return (i+1)*400/3;})
+.attr("cy",200)
+.attr("r", d => escala(d))
+.attr("fill", "steelblue");</script></body>
+</html>
